@@ -2,30 +2,30 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation_main_menu"
-    app:startDestination="@id/aviaTicketsFragment">
+    android:id="@+id/nav_main_menu"
+    app:startDestination="@id/nav_menu_item_avia_tickets">
     <fragment
-        android:id="@+id/aviaTicketsFragment"
+        android:id="@+id/nav_menu_item_avia_tickets"
         android:name="com.example.myapplication.fragments.AviaTicketsFragment"
-        android:label="fragment_avia_tickets"
+        android:label="AviaTicketsFragment"
         tools:layout="@layout/fragment_avia_tickets" />
     <fragment
-        android:id="@+id/hotelsFragment"
+        android:id="@+id/nav_menu_item_hotels"
         android:name="com.example.myapplication.fragments.HotelsFragment"
         android:label="HotelFragment"
         tools:layout="@layout/fragment_hotels" />
     <fragment
-        android:id="@+id/briefFragment"
+        android:id="@+id/nav_menu_item_brief"
         android:name="com.example.myapplication.fragments.BriefFragment"
         android:label="BriefFragment"
         tools:layout="@layout/fragment_brief" />
     <fragment
-        android:id="@+id/subscriptionsFragment"
+        android:id="@+id/nav_menu_item_subscriptions"
         android:name="com.example.myapplication.fragments.SubscriptionsFragment"
         android:label="ProfileFragment"
         tools:layout="@layout/fragment_subscriptions" />
     <fragment
-        android:id="@+id/profileFragment"
+        android:id="@+id/nav_menu_item_profile"
         android:name="com.example.myapplication.fragments.ProfileFragment"
         android:label="ProfileFragment"
         tools:layout="@layout/fragment_profile" />
