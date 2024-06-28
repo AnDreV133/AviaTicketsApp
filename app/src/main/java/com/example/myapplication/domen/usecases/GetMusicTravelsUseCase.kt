@@ -5,27 +5,9 @@ import com.example.myapplication.domen.repositories.MusicTravelRepository
 
 class GetMusicTravelsUseCase(private val repository: MusicTravelRepository) {
     suspend fun execute(): List<ItemMusicTravelModel> {
-        val res = mutableListOf<ItemMusicTravelModel>()
-        for (item in repository.getAll()) {
-            item.price = item.price.addSpaceToPrice()
-            res.add(item)
-        }
-
-        return res
+        return repository.getAll()
     }
 
-    private fun String.addSpaceToPrice() = buildString {
-        var counterInterval = 0
-        for (c in this@addSpaceToPrice.reversed()) {
-            if (counterInterval == 3) {
-                append(' ')
-                counterInterval = 0
-            }
 
-            append(c)
-            counterInterval++
-        }
-        reverse()
-    }
 
 }

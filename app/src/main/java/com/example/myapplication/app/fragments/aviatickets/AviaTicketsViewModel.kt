@@ -11,4 +11,18 @@ class AviaTicketsFragmentModel (
 
 class AviaTicketsViewModel : ViewModel() {
 
+
+    private fun String.addSpaceToPrice() = buildString {
+        var counterInterval = 0
+        for (c in this@addSpaceToPrice.reversed()) {
+            if (counterInterval == 3) {
+                append(' ')
+                counterInterval = 0
+            }
+
+            append(c)
+            counterInterval++
+        }
+        reverse()
+    }
 }

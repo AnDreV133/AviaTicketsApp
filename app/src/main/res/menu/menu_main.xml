@@ -7,18 +7,18 @@
         android:title="Авиабилеты" />
     <item
         android:id="@+id/nav_menu_item_hotels"
-        android:icon="@drawable/ic_menu_stub"
+        android:icon="@drawable/ic_menu_hotels"
         android:title="Отели" />
     <item
         android:id="@+id/nav_menu_item_brief"
-        android:icon="@drawable/ic_menu_stub"
+        android:icon="@drawable/ic_menu_brief"
         android:title="Короче" />
     <item
         android:id="@+id/nav_menu_item_subscriptions"
-        android:icon="@drawable/ic_menu_stub"
+        android:icon="@drawable/ic_menu_subscriptions"
         android:title="Подписки" />
     <item
         android:id="@+id/nav_menu_item_profile"
-        android:icon="@drawable/ic_menu_stub"
+        android:icon="@drawable/ic_menu_profile"
         android:title="Профиль" />
 </menu>

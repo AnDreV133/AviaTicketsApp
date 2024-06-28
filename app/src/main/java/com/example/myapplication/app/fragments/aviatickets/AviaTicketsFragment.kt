@@ -2,6 +2,7 @@ package com.example.myapplication.app.fragments.aviatickets
 
 import android.os.Bundle
 import android.view.View
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -16,14 +17,21 @@ import kotlinx.coroutines.launch
 class AviaTicketsFragment :
     FragmentFactory(R.layout.fragment_avia_tickets) {
     private lateinit var getMusicTravelsUseCase: GetMusicTravelsUseCase
-
-    //    private lateinit var mv: AviaTicketsViewModel
+//        private lateinit var mv: AviaTicketsViewModel
+//
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//
+//        mv = ViewModelProvider(
+//            this,
+//            AviaTicketsViewModelFactory()
+//        )[AviaTicketsViewModel::class.java]
+//
+//    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         getMusicTravelsUseCase = GetMusicTravelsUseCase(MusicTravelRepositoryImpl(requireContext()))
-
-//        mv = ViewModelProvider(this, AviaTicketsViewModelFactory()).get(AviaTicketsViewModel::class.java)
 
         val items = mutableListOf<ItemMusicTravelModel>()
         lifecycleScope.launch {
