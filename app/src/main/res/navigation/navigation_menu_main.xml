@@ -6,27 +6,27 @@
     app:startDestination="@id/nav_menu_item_avia_tickets">
     <fragment
         android:id="@+id/nav_menu_item_avia_tickets"
-        android:name="com.example.myapplication.fragments.AviaTicketsFragment"
+        android:name="com.example.myapplication.app.fragments.aviatickets.AviaTicketsFragment"
         android:label="AviaTicketsFragment"
         tools:layout="@layout/fragment_avia_tickets" />
     <fragment
         android:id="@+id/nav_menu_item_hotels"
-        android:name="com.example.myapplication.fragments.HotelsFragment"
+        android:name="com.example.myapplication.app.fragments.HotelsFragment"
         android:label="HotelFragment"
         tools:layout="@layout/fragment_hotels" />
     <fragment
         android:id="@+id/nav_menu_item_brief"
-        android:name="com.example.myapplication.fragments.BriefFragment"
+        android:name="com.example.myapplication.app.fragments.BriefFragment"
         android:label="BriefFragment"
         tools:layout="@layout/fragment_brief" />
     <fragment
         android:id="@+id/nav_menu_item_subscriptions"
-        android:name="com.example.myapplication.fragments.SubscriptionsFragment"
+        android:name="com.example.myapplication.app.fragments.SubscriptionsFragment"
         android:label="ProfileFragment"
         tools:layout="@layout/fragment_subscriptions" />
     <fragment
         android:id="@+id/nav_menu_item_profile"
-        android:name="com.example.myapplication.fragments.ProfileFragment"
+        android:name="com.example.myapplication.app.fragments.ProfileFragment"
         android:label="ProfileFragment"
         tools:layout="@layout/fragment_profile" />
 
