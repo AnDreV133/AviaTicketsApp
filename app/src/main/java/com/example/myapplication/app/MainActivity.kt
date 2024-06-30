@@ -8,14 +8,14 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.myapplication.R
+import com.example.myapplication.domen.utils.TAG
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
-    private val TAG = "MainActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d(TAG, "$TAG onCreate")
+        Log.d(TAG, "onCreate $this")
         setContentView(R.layout.activity_main)
         val navController = findNavController(R.id.fragment_container)
         val menuBar = AppBarConfiguration(

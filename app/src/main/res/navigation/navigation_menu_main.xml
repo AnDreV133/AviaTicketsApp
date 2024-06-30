@@ -8,7 +8,16 @@
         android:id="@+id/nav_menu_item_avia_tickets"
         android:name="com.example.myapplication.app.fragments.aviatickets.AviaTicketsFragment"
         android:label="AviaTicketsFragment"
-        tools:layout="@layout/fragment_avia_tickets" />
+        tools:layout="@layout/fragment_avia_tickets">
+        <action
+            android:id="@+id/action_nav_menu_item_avia_tickets_to_nav_fragment_hard_route"
+            app:destination="@id/nav_fragment_hard_route" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_fragment_hard_route"
+        android:name="com.example.myapplication.app.fragments.aviatickets.hardroute.HardRouteFragment"
+        android:label="HardRouteFragment"
+        tools:layout="@layout/fragment_avia_tickets_hard_route" />
     <fragment
         android:id="@+id/nav_menu_item_hotels"
         android:name="com.example.myapplication.app.fragments.HotelsFragment"

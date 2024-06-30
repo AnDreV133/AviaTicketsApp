@@ -14,7 +14,7 @@
         android:layout_width="132dp"
         android:layout_height="132dp"
         android:layout_weight="1"
-        android:background="@drawable/shape_image_music_travel"
+        android:background="@drawable/shape_image_16dp"
         android:contentDescription="image music travel"
         android:scaleType="fitXY"
         tools:srcCompat="@tools:sample/avatars" />
@@ -50,7 +50,7 @@
             android:layout_width="24dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_menu_stub"
+            app:srcCompat="@drawable/ic_plane_decoration"
             app:tint="@color/grey_6" />
 
         <TextView
