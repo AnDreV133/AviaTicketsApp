@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/nav_menu_item_avia_tickets"
-        android:icon="@drawable/menu_icon_avia_tickets"
+        android:icon="@drawable/ic_menu_avia_tickets"
         android:title="Авиабилеты" />
     <item
         android:id="@+id/nav_menu_item_hotels"
-        android:icon="@drawable/menu_icon_stub"
+        android:icon="@drawable/ic_menu_hotels"
         android:title="Отели" />
     <item
         android:id="@+id/nav_menu_item_brief"
-        android:icon="@drawable/menu_icon_stub"
+        android:icon="@drawable/ic_menu_brief"
         android:title="Короче" />
     <item
         android:id="@+id/nav_menu_item_subscriptions"
-        android:icon="@drawable/menu_icon_stub"
+        android:icon="@drawable/ic_menu_subscriptions"
         android:title="Подписки" />
     <item
         android:id="@+id/nav_menu_item_profile"
-        android:icon="@drawable/menu_icon_stub"
+        android:icon="@drawable/ic_menu_profile"
         android:title="Профиль" />
 </menu>
