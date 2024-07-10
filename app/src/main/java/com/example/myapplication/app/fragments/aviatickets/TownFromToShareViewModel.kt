@@ -5,7 +5,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.myapplication.domain.usecases.CashTownFromUseCase
-import com.example.myapplication.domain.utils.TAG
 
 
 class TownFromToShareViewModel(
@@ -20,7 +19,7 @@ class TownFromToShareViewModel(
     val state: LiveData<Model> = _state
 
     init {
-        Log.d(TAG, "init $this")
+        Log.d(com.example.myapplication.domain.utils.TAG, "init $this")
         _state.value?.townFrom = cashTownFromUseCase.get()
     }
 
@@ -29,7 +28,7 @@ class TownFromToShareViewModel(
             cashTownFromUseCase.set(str)
             _state.value = _state.value?.copy(townFrom = str)
 
-            Log.d(TAG, "updateTownFrom $str")
+            Log.d(com.example.myapplication.domain.utils.TAG, "updateTownFrom $str")
         }
     }
 
@@ -37,7 +36,7 @@ class TownFromToShareViewModel(
         townTo.trim().toString().also { str ->
             _state.value = _state.value?.copy(townTo = str)
 
-            Log.d(TAG, "updateTownTo $str")
+            Log.d(com.example.myapplication.domain.utils.TAG, "updateTownTo $str")
         }
     }
 }

@@ -1,3 +1,3 @@
 package com.example.myapplication.domain.utils
 
-val TAG = "MAIN_TAG"
+const val TAG = "MAIN_TAG"

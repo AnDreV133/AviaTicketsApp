@@ -1,14 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-//    kotlin("kapt")
 }
-
-//sourceSets {
-//    create("assets") {
-//        resources.srcDir("src/main/assets")
-//    }
-//}
 
 android {
     namespace = "com.example.myapplication"
@@ -39,25 +32,19 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-//    composeOptions {
-//        kotlinCompilerExtensionVersion = "1.0.1"
-//    }
+
     kotlinOptions {
         jvmTarget = "17"
     }
 }
 
 dependencies {
-//    kapt(libs.artifactId)
+
+    implementation(project(":domain"))
+    implementation(project(":data"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
-
-    implementation(libs.dagger)
-//    kapt(libs.dagger)
-
-    implementation(libs.retrofit2.retrofit)
-    implementation(libs.converter.gson)
 
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)

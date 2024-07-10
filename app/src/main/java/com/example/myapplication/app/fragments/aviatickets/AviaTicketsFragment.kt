@@ -1,8 +1,6 @@
 package com.example.myapplication.app.fragments.aviatickets
 
 import android.os.Bundle
-import android.util.Log
-import android.view.MotionEvent
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.EditText
@@ -12,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
 import com.example.myapplication.app.fragments.aviatickets.sheetdialog.TownToSheetDialogFragment
 import com.example.myapplication.app.utils.BaseFragment
-import com.example.myapplication.domain.utils.TAG
 
 
 class AviaTicketsFragment

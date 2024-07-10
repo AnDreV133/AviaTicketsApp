@@ -1,6 +1,6 @@
-package com.example.myapplication.repositories.api
+package com.example.myapplication.data.api
 
-import com.example.myapplication.repositories.models.Offers
+import com.example.myapplication.data.models.Offers
 import retrofit2.Response
 import retrofit2.http.GET
 

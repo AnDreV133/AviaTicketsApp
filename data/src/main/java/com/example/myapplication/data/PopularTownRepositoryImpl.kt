@@ -1,4 +1,4 @@
-package com.example.myapplication.repositories
+package com.example.myapplication.data
 
 import android.content.Context
 import android.graphics.BitmapFactory
@@ -6,7 +6,8 @@ import com.example.myapplication.R
 import com.example.myapplication.domain.models.PopularTownModel
 import com.example.myapplication.domain.repositories.PopularTownRepository
 
-class PopularTownRepositoryImpl(private val context: Context) : PopularTownRepository {
+class PopularTownRepositoryImpl(private val context: Context) :
+    PopularTownRepository {
     override suspend fun getByLimit(limit: Int): List<PopularTownModel> {
         return listOf(
             PopularTownModel(

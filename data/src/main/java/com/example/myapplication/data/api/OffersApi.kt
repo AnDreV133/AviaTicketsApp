@@ -1,4 +1,4 @@
-package com.example.myapplication.repositories.api
+package com.example.myapplication.data.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

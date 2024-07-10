@@ -1,32 +1,42 @@
-package com.example.myapplication.repositories
+package com.example.myapplication.data
 
 import android.content.Context
 import android.graphics.BitmapFactory
 import com.example.myapplication.R
 import com.example.myapplication.domain.models.ItemMusicTravelModel
 import com.example.myapplication.domain.repositories.MusicTravelRepository
-import com.example.myapplication.repositories.api.OffersApi
+import com.example.myapplication.data.api.OffersApi
 
-class MusicTravelRepositoryImpl(private val context: Context) : BaseRepository(), MusicTravelRepository {
+class MusicTravelRepositoryImpl(private val context: Context) : BaseRepository(),
+    MusicTravelRepository {
     override suspend fun getAll(): List<ItemMusicTravelModel> {
         // todo stub
         return listOf(
             ItemMusicTravelModel(
-                image = BitmapFactory.decodeResource(context.resources, R.drawable.img_offer_1_stub),
+                image = BitmapFactory.decodeResource(
+                    context.resources,
+                    R.drawable.img_offer_1_stub
+                ),
                 title = "Die Antwoord",
                 town = "Будапешт",
                 price = "5000"
             ),
 
             ItemMusicTravelModel(
-                image = BitmapFactory.decodeResource(context.resources, R.drawable.img_offer_2_stub),
+                image = BitmapFactory.decodeResource(
+                    context.resources,
+                    R.drawable.img_offer_2_stub
+                ),
                 title = "Socrat&Lera",
                 town = "Санкт-Петербург",
                 price = "1999"
             ),
 
             ItemMusicTravelModel(
-                image = BitmapFactory.decodeResource(context.resources, R.drawable.img_offer_3_stub),
+                image = BitmapFactory.decodeResource(
+                    context.resources,
+                    R.drawable.img_offer_3_stub
+                ),
                 title = "Лампабикт",
                 town = "Москва",
                 price = "2390"
