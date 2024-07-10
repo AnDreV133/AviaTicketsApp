@@ -3,12 +3,12 @@ package com.example.myapplication.app.fragments.aviatickets
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.myapplication.R
-import com.example.myapplication.app.master.MasterAdapter
-import com.example.myapplication.domen.models.ItemMusicTravelModel
+import com.example.myapplication.app.utils.BaseAdapter
+import com.example.myapplication.domain.models.ItemMusicTravelModel
 
 class MusicTravelAdapter(
     data: MutableList<ItemMusicTravelModel>
-) : MasterAdapter<ItemMusicTravelModel>(data, R.layout.item_music_travel) {
+) : BaseAdapter<ItemMusicTravelModel>(data, R.layout.item_music_travel) {
 
     override fun onBindViewHolder(holder: MasterViewHolder, position: Int) {
         holder.view.apply {

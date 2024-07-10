@@ -21,6 +21,7 @@
 
             <TextView
                 android:id="@+id/textView1"
+                style="@style/CustomTextView.Bold.Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
@@ -28,20 +29,19 @@
                 android:text="Поиск дешевых\nавиабилетов"
                 android:textAlignment="center"
                 android:textColor="@color/grey_7"
-                android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView2"
+                style="@style/CustomTextView.Bold.Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
                 android:fontFamily="@font/sf_pro_display_bold"
                 android:text="Музыкально отлететь"
                 android:textColor="@color/white"
-                android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.12"
                 app:layout_constraintStart_toStartOf="parent"
@@ -106,13 +106,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="1dp"
                             android:layout_marginBottom="8dp"
-                            android:background="@null"
                             android:ems="10"
                             android:hint="Откуда - Москва"
-                            android:inputType="text"
-                            android:textColor="@color/white"
-                            android:textColorHint="@color/grey_6"
-                            android:textSize="16sp"
                             app:layout_constraintBottom_toTopOf="@+id/view_search_delimiter"
                             app:layout_constraintStart_toStartOf="@+id/view_search_delimiter" />
 
@@ -122,13 +117,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="1dp"
                             android:layout_marginTop="8dp"
-                            android:background="@null"
                             android:ems="10"
                             android:hint="Куда - Турция"
-                            android:inputType="text"
-                            android:textColor="@color/white"
-                            android:textColorHint="@color/grey_6"
-                            android:textSize="16sp"
                             app:layout_constraintStart_toStartOf="@+id/view_search_delimiter"
                             app:layout_constraintTop_toBottomOf="@+id/view_search_delimiter" />
 

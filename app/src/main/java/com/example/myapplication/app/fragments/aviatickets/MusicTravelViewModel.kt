@@ -4,8 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.myapplication.domen.models.ItemMusicTravelModel
-import com.example.myapplication.domen.usecases.GetMusicTravelsUseCase
+import com.example.myapplication.domain.models.ItemMusicTravelModel
+import com.example.myapplication.domain.usecases.GetMusicTravelsUseCase
 import kotlinx.coroutines.launch
 
 

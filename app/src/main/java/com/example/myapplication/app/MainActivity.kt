@@ -1,14 +1,13 @@
 package com.example.myapplication.app
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.myapplication.R
-import com.example.myapplication.domen.utils.TAG
+import com.example.myapplication.domain.utils.TAG
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -18,17 +17,37 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "onCreate $this")
         setContentView(R.layout.activity_main)
         val navController = findNavController(R.id.fragment_container)
-        val menuBar = AppBarConfiguration(
-            setOf(
-                R.id.nav_menu_item_avia_tickets,
-                R.id.nav_menu_item_hotels,
-                R.id.nav_menu_item_brief,
-                R.id.nav_menu_item_subscriptions,
-                R.id.nav_menu_item_profile
-            )
-        )
 
-        setupActionBarWithNavController(navController, menuBar)
         findViewById<BottomNavigationView>(R.id.main_menu_bar).setupWithNavController(navController)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "onStart $this")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "onResume $this")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "onPause $this")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "onStop $this")
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        Log.d(TAG, "onSaveInstanceState $this")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "onDestroy $this")
     }
 }

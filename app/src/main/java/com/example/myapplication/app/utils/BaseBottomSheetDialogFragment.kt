@@ -1,17 +1,21 @@
-package com.example.myapplication.app.master
+package com.example.myapplication.app.utils
 
+import android.app.Dialog
 import android.content.Context
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.ViewModel
-import com.example.myapplication.domen.utils.TAG
+import androidx.fragment.app.DialogFragment
+import com.example.myapplication.R
+import com.example.myapplication.domain.utils.TAG
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-abstract class MasterBottomSheetDialogFragment(
+abstract class BaseBottomSheetDialogFragment(
     val res: Int
 ) : BottomSheetDialogFragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,15 +23,20 @@ abstract class MasterBottomSheetDialogFragment(
         Log.d(TAG, "onCreate $this")
     }
 
+    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+        Log.d(TAG, "onCreateDialog $this")
+
+        return BottomSheetDialog(requireContext(), R.style.CustomBottomSheetDialog)
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        (activity as AppCompatActivity).supportActionBar?.hide()
-        Log.d("FragmentFactory", "fragment been created $this")
+        Log.d(TAG, "onCreateView $this")
+
         return inflater.inflate(res, container, false)
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Log.d(TAG, "onViewCreated $this")
@@ -58,7 +67,10 @@ abstract class MasterBottomSheetDialogFragment(
         Log.d(TAG, "onStop $this")
     }
 
-    override fun onSaveInstanceState(outState: Bundle) {}
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        Log.d(TAG, "onSaveInstanceState $this")
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()

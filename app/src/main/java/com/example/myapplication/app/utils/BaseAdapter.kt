@@ -1,4 +1,4 @@
-package com.example.myapplication.app.master
+package com.example.myapplication.app.utils
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,11 +6,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 
-abstract class MasterAdapter<T>(
+abstract class BaseAdapter<T>(
     val data: MutableList<T>,
-    private val res: Int
+    private val resource: Int
 ) :
-    RecyclerView.Adapter<MasterAdapter.MasterViewHolder>() {
+    RecyclerView.Adapter<BaseAdapter.MasterViewHolder>() {
     class MasterViewHolder(val view: View) : ViewHolder(view)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MasterViewHolder {
@@ -18,7 +18,7 @@ abstract class MasterAdapter<T>(
             LayoutInflater
                 .from(parent.context)
                 .inflate(
-                    res,
+                    resource,
                     parent,
                     false
                 )

@@ -3,8 +3,8 @@ package com.example.myapplication.repositories
 import android.content.Context
 import android.graphics.BitmapFactory
 import com.example.myapplication.R
-import com.example.myapplication.domen.models.ItemMusicTravelModel
-import com.example.myapplication.domen.repositories.MusicTravelRepository
+import com.example.myapplication.domain.models.ItemMusicTravelModel
+import com.example.myapplication.domain.repositories.MusicTravelRepository
 import com.example.myapplication.repositories.api.OffersApi
 
 class MusicTravelRepositoryImpl(private val context: Context) : BaseRepository(), MusicTravelRepository {

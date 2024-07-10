@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CustomBottomSheetDialog"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/shape_sheet_dialog_travel_town_to_background"
@@ -51,34 +52,25 @@
                 app:layout_constraintTop_toTopOf="@+id/view2" />
 
             <EditText
-                android:id="@+id/edit_text_sheet_dialog_search_board_from"
+                android:id="@+id/sheet_dialog_edit_text_town_from"
+                style="@style/CustomEditText.Body1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="8dp"
-                android:background="@null"
                 android:hint="Откуда - Москва"
-                android:inputType="text"
-                android:textColor="@color/white"
-                android:textColorHint="@color/grey_6"
-                android:textSize="16sp"
                 app:layout_constraintBottom_toTopOf="@+id/view_sheet_dialog_search_board_delimiter"
                 app:layout_constraintEnd_toEndOf="@+id/view_sheet_dialog_search_board_delimiter"
                 app:layout_constraintStart_toEndOf="@+id/imageView2" />
 
             <EditText
-                android:id="@+id/edit_text_sheet_dialog_search_board_to"
+                android:id="@+id/sheet_dialog_edit_text_town_to"
+                style="@style/CustomEditText.Body1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:background="@null"
-                android:ems="10"
                 android:hint="Куда - Турция"
-                android:inputType="text"
-                android:textColor="@color/white"
-                android:textColorHint="@color/grey_6"
-                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="@+id/view_sheet_dialog_search_board_delimiter"
                 app:layout_constraintStart_toEndOf="@+id/imageView4"
                 app:layout_constraintTop_toBottomOf="@+id/view_sheet_dialog_search_board_delimiter" />
@@ -88,7 +80,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="@+id/view_sheet_dialog_search_board_delimiter"
-                app:layout_constraintTop_toTopOf="@+id/edit_text_sheet_dialog_search_board_from"
+                app:layout_constraintTop_toTopOf="@+id/sheet_dialog_edit_text_town_from"
                 app:srcCompat="@drawable/ic_plane_from"
                 app:tint="@color/grey_5" />
 
@@ -97,7 +89,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="@+id/view_sheet_dialog_search_board_delimiter"
-                app:layout_constraintTop_toTopOf="@+id/edit_text_sheet_dialog_search_board_to"
+                app:layout_constraintTop_toTopOf="@+id/sheet_dialog_edit_text_town_to"
                 app:srcCompat="@drawable/ic_loupe"
                 app:tint="@color/white" />
 
@@ -119,8 +111,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center|top"
-                    android:orientation="vertical"
-                    >
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/sheet_dialog_town_to_hard_route"
@@ -129,14 +120,11 @@
                         app:srcCompat="@drawable/ic_menu_hard_pass" />
 
                     <TextView
-                        android:id="@+id/textView7"
+                        style="@style/CustomTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/sf_pro_display_regular"
-                        android:text="Сложный\nмаршрут"
-                        android:textColor="@color/white"
-                        android:textSize="14sp" />
+                        android:text="Сложный\nмаршрут" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -153,14 +141,11 @@
                         app:srcCompat="@drawable/ic_menu_globe" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        style="@style/CustomTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/sf_pro_display_regular"
-                        android:text="Куда угодно"
-                        android:textColor="@color/white"
-                        android:textSize="14sp" />
+                        android:text="Куда угодно" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -177,14 +162,11 @@
                         app:srcCompat="@drawable/ic_menu_calendar" />
 
                     <TextView
-                        android:id="@+id/textView5"
+                        style="@style/CustomTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/sf_pro_display_regular"
-                        android:text="Выходные"
-                        android:textColor="@color/white"
-                        android:textSize="14sp" />
+                        android:text="Выходные" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -201,14 +183,11 @@
                         app:srcCompat="@drawable/ic_menu_flaim" />
 
                     <TextView
-                        android:id="@+id/textView4"
+                        style="@style/CustomTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/sf_pro_display_regular"
-                        android:text="Горячие\nбилеты"
-                        android:textColor="@color/white"
-                        android:textSize="14sp" />
+                        android:text="Горячие\nбилеты" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -226,7 +205,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_view_sheet_dialog_town_to"
+                android:id="@+id/sheet_dialog_recycler_view_popular_towns"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginStart="16dp"

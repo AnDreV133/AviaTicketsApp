@@ -1,4 +1,4 @@
-package com.example.myapplication.domen.models
+package com.example.myapplication.domain.models
 
 import android.graphics.Bitmap
 

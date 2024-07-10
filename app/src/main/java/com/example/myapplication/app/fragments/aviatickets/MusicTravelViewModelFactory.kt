@@ -3,8 +3,8 @@ package com.example.myapplication.app.fragments.aviatickets
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.myapplication.domen.usecases.CashTownFromUseCase
-import com.example.myapplication.domen.usecases.GetMusicTravelsUseCase
+import com.example.myapplication.domain.usecases.CashTownFromUseCase
+import com.example.myapplication.domain.usecases.GetMusicTravelsUseCase
 import com.example.myapplication.repositories.MusicTravelRepositoryImpl
 import com.example.myapplication.repositories.TownFromRepositoryImpl
 

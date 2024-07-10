@@ -1,7 +1,7 @@
-package com.example.myapplication.domen.usecases
+package com.example.myapplication.domain.usecases
 
-import com.example.myapplication.domen.models.ItemMusicTravelModel
-import com.example.myapplication.domen.repositories.MusicTravelRepository
+import com.example.myapplication.domain.models.ItemMusicTravelModel
+import com.example.myapplication.domain.repositories.MusicTravelRepository
 
 class GetMusicTravelsUseCase(private val repository: MusicTravelRepository) {
     suspend fun get(): List<ItemMusicTravelModel> {

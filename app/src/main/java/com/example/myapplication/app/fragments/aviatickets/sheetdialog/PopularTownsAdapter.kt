@@ -3,14 +3,14 @@ package com.example.myapplication.app.fragments.aviatickets.sheetdialog
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.myapplication.R
-import com.example.myapplication.app.master.MasterAdapter
-import com.example.myapplication.domen.models.PopularTownModel
+import com.example.myapplication.app.utils.BaseAdapter
+import com.example.myapplication.domain.models.PopularTownModel
 
-class PopularTownAdapter(
+class PopularTownsAdapter(
     data: MutableList<PopularTownModel>
-) : MasterAdapter<PopularTownModel>(
+) : BaseAdapter<PopularTownModel>(
     data,
-    R.id.recycler_view_sheet_dialog_town_to
+    R.id.sheet_dialog_recycler_view_popular_towns
 ) {
 
     override fun onBindViewHolder(holder: MasterViewHolder, position: Int) {

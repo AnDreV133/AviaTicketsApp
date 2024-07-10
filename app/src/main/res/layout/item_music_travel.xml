@@ -21,23 +21,20 @@
 
     <TextView
         android:id="@+id/music_travel_title"
+        style="@style/CustomTextView.Bold.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:fontFamily="@font/sf_pro_display_bold"
-        android:text="title"
-        android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:text="title" />
 
     <TextView
         android:id="@+id/music_travel_town"
+        style="@style/CustomTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:fontFamily="@font/sf_pro_display_regular"
-        android:text="town"
-        android:textColor="@color/white"
-        android:textSize="14sp" />
+        android:text="town" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -55,13 +52,11 @@
 
         <TextView
             android:id="@+id/music_travel_price"
+            style="@style/CustomTextView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:fontFamily="@font/sf_pro_display_regular"
             android:gravity="center_vertical"
-            android:text="price"
-            android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:text="price" />
     </LinearLayout>
 </LinearLayout>

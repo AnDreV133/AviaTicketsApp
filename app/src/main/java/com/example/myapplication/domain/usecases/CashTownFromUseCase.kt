@@ -1,6 +1,6 @@
-package com.example.myapplication.domen.usecases
+package com.example.myapplication.domain.usecases
 
-import com.example.myapplication.domen.repositories.TownFromRepository
+import com.example.myapplication.domain.repositories.TownFromRepository
 
 class CashTownFromUseCase(private val repository: TownFromRepository) {
     fun get(): String {

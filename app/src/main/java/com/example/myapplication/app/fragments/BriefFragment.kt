@@ -1,7 +1,6 @@
 package com.example.myapplication.app.fragments
 
-import androidx.lifecycle.ViewModel
 import com.example.myapplication.R
-import com.example.myapplication.app.master.MasterFragment
+import com.example.myapplication.app.utils.BaseFragment
 
-class BriefFragment : MasterFragment(R.layout.fragment_brief)
+class BriefFragment : BaseFragment(R.layout.fragment_brief)

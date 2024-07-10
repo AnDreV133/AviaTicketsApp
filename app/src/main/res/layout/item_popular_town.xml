@@ -16,25 +16,23 @@
 
     <TextView
         android:id="@+id/popular_town_title"
+        style="@style/CustomTextView.Bold.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:fontFamily="@font/sf_pro_display_bold"
         android:text="Title"
         android:textColor="@color/white"
-        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/popular_town_image"
         app:layout_constraintTop_toTopOf="@+id/popular_town_image" />
 
     <TextView
         android:id="@+id/textView3"
+        style="@style/CustomTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:fontFamily="@font/sf_pro_display_regular"
         android:text="Популярное направление"
         android:textColor="@color/grey_5"
-        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/popular_town_image"
         app:layout_constraintStart_toEndOf="@+id/popular_town_image"
         app:layout_constraintTop_toBottomOf="@+id/popular_town_title" />

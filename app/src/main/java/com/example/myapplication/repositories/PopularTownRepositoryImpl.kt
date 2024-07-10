@@ -3,8 +3,8 @@ package com.example.myapplication.repositories
 import android.content.Context
 import android.graphics.BitmapFactory
 import com.example.myapplication.R
-import com.example.myapplication.domen.models.PopularTownModel
-import com.example.myapplication.domen.repositories.PopularTownRepository
+import com.example.myapplication.domain.models.PopularTownModel
+import com.example.myapplication.domain.repositories.PopularTownRepository
 
 class PopularTownRepositoryImpl(private val context: Context) : PopularTownRepository {
     override suspend fun getByLimit(limit: Int): List<PopularTownModel> {

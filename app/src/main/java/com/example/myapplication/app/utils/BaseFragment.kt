@@ -1,4 +1,4 @@
-package com.example.myapplication.app.master
+package com.example.myapplication.app.utils
 
 import android.content.Context
 import android.os.Bundle
@@ -6,12 +6,10 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModel
-import com.example.myapplication.domen.utils.TAG
+import com.example.myapplication.domain.utils.TAG
 
-abstract class MasterFragment(
+abstract class BaseFragment(
      private val res: Int
 ) : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,8 +21,8 @@ abstract class MasterFragment(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        (activity as AppCompatActivity).supportActionBar?.hide()
-        Log.d("FragmentFactory", "fragment been created $this")
+//        (activity as AppCompatActivity).supportActionBar?.hide()
+        Log.d(TAG, "onCreateView $this")
         return inflater.inflate(res, container, false)
     }
 
@@ -58,7 +56,10 @@ abstract class MasterFragment(
         Log.d(TAG, "onStop $this")
     }
 
-    override fun onSaveInstanceState(outState: Bundle) { }
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        Log.d(TAG, "onSaveInstanceState $this")
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()

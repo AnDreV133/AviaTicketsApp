@@ -2,8 +2,8 @@ package com.example.myapplication.app.fragments.aviatickets.sheetdialog
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.myapplication.domen.models.PopularTownModel
-import com.example.myapplication.domen.usecases.GetPopularTownUseCase
+import com.example.myapplication.domain.models.PopularTownModel
+import com.example.myapplication.domain.usecases.GetPopularTownUseCase
 
 class TownToSheetDialogViewModel(getPopularTownUseCase: GetPopularTownUseCase) : ViewModel() {
     class Model(

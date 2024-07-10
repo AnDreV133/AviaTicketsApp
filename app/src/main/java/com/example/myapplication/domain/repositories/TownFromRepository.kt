@@ -1,4 +1,4 @@
-package com.example.myapplication.domen.repositories
+package com.example.myapplication.domain.repositories
 
 interface TownFromRepository {
     fun getTown(): String

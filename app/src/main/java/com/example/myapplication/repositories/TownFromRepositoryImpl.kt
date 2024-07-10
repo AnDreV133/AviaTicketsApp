@@ -1,7 +1,7 @@
 package com.example.myapplication.repositories
 
 import android.content.Context
-import com.example.myapplication.domen.repositories.TownFromRepository
+import com.example.myapplication.domain.repositories.TownFromRepository
 
 class TownFromRepositoryImpl(context: Context) : TownFromRepository {
     private val sp = context.getSharedPreferences("TownFrom", Context.MODE_PRIVATE)
